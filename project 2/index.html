@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  meta data   -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Moum candles">
+  <meta name="robots" content="noindex, nofollow">
+    <title>Moum Candles</title>
+    <!-- stylesheet of css  -->
+    <link rel="stylesheet" href="./css/style1.css">
+    <!-- fontawesome stylesheet for adding icons  -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Merriweather:ital,wght@0,400;0,700;0,900;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header  -->
+    <header>
+        <div class="logo">
+          <!-- logo image  -->
+            <img src="./img/logo2.png" alt="Your Logo" class="logo-img">
+        </div>
+        <!-- nav list  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="product.html" class="dropdown-link">Products</a>
+                    <!-- dropdown list on products when hovered  -->
+                    <ul class="dropdown-menu">
+                        <li>Gel Candles</li>
+                        <li>Soy Wax Candles</li>
+                        <li>Pearl Candles</li>
+                    </ul>
+                </li>
+                <!-- icons for cart and search  -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <!-- masthead section for adding bg image and text on top of it  -->
+        <section class="masthead">
+            <div>
+            <h1>Illuminate Every Moment</h1>
+            <p>Embrace the cozy charm of candle season</p>
+            <button>Shop our scents</button>
+        </div>
+        </section>
+        <!-- this section containes 2 images with description of them in a flexbox-->
+        <section>
+            <h2 class="heading2">Our Best Sellers</h2>
+            <div class="section2">
+            <div class="img-div"><img src="./img/SKY00082.jpg" alt="soy-wax" class="img1"></div>
+            <div class="div1">
+            <h3> Citrus Spice Delight Soy Wax Candle</h3>
+            <p>Revel in the exquisite aroma of our Citrus Spice Delight Soy Wax Candle. Hand-poured in small batches, this luxurious candle radiates a sophisticated and inviting fragrance of zesty citrus, warm spices, and earthy undertones.</p>
+            <button class="btn1">More Info</button></div>
+            <div class="img-div"><img src="./img/SKY00013.jpg" alt="soy-wax" class="img1"></div>
+            <div class="div1">
+            <h3> Radiant Rosé Almond Soy Wax Scented Candle</h3>
+            <p>Light up your home with this exquisite Radiant Rosé Almond Soy Wax Scented Candle. Crafted from all-natural ingredients, this candle emits a captivating aroma that will bring warmth and elegance to any room</p>
+            <button class="btn1">More Info</button>
+               </div>
+            </div>
+              <!-- this section containes 2 images with gradient on top of them  -->
+        </section>
+        <section>
+            <h3 class="heading2">Our Best Deals</h3>
+        <div class="image-grid c1">
+            <div class="image-container">
+              <img class="image" src="./img/deal1.JPG" alt="Image 1">
+              <div class="gradient-overlay"><p class="text"><button class="btn1 ">Shop Now</button></p></div>
+            </div>
+            
+            <div class="image-container">
+              <img class="image" src="./img/deal2.JPG" alt="Image 2">
+              <div class="gradient-overlay"><p class="text"><button class="btn1 ">Shop Now</button></p></div>
+            </div>
+          </div>
+          </section>
+          <section>
+            <!-- this section contains 3 images which when hovered upon gets brighter and clear -->
+            <h3 class="heading2">Gifts for your loved ones</h3>
+            <div class="gift-section">
+              <p><img src="./img/gift1.JPG" alt="gift1" class="gift-img"></p>
+              <p><img src="./img/gift3.jpg" alt="gift3" class="gift-img"></p>
+              <p><img src="./img/gift4.JPG" alt="gift4" class="gift-img"></p>
+            </div>
+          </section>
+    </main>
+<!-- adding the footer here  -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Policies</a></li>
+            </ul>
+          </div>
+            <!-- contact details  -->
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: moumcandles@outlook.com</p>
+            <p>Phone: +1 (153) 456-7800</p>
+          </div>
+            <!-- login form , call to action -->
+          <div class="footer-section">
+            <h3>Subscribe</h3>
+            <p>Stay updated with our latest products and offers.</p>
+            <form action="submit.html" method="post">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <button type="submit" class="btnbtn">Login</button>
+            </form>
+          </div>
+    <!-- icons in footer -->
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+              <li><a href="index.html" ><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="index.html" ><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="index.html" ><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+
+</html>

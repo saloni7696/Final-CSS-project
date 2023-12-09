@@ -1,0 +1,263 @@
+html{
+    scroll-behavior: smooth ;
+}
+
+/* using flexbox to make the header look arranged  */
+header{
+    display: flex;
+    width: auto;
+    height: 6em;    
+}
+/* using flexgrow to increase the gap b/w logo and list items  */
+header div {
+    flex-grow: 1;
+}
+header div img{
+    height:70%;
+    width:auto;
+    padding: 1%;
+}
+header nav {
+    padding-top: 2%;
+}
+header nav ul{
+    display:flex;
+    list-style: none;  
+}
+header nav ul li{
+    padding-right:0.9em;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+header nav ul li a{
+    color: #ffa43b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, font-size 0.3s; /* Add transition for color and font-size changes */
+    font-family: 'Merriweather',sans-serif;
+}
+
+nav a:hover {
+    color: #ffd700;
+    font-size: 1.5em; /* Increase font size on hover */
+    
+}
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the link */
+    left: 0;
+    z-index: 1; /* Ensure the dropdown appears above other elements */
+    background-color: #ffffff; /* Match the header background color */
+    border: 3px groove rgb(255, 132, 45); /* Border style and color */
+    
+}
+
+.dropdown-menu li {
+    color: #ffa43b; /* Text color for dropdown links */
+    text-decoration: none;
+    padding: 1%;
+    display: block; /* Make each link a block element */
+    font-size: 0.7em;
+    font-family: 'Playfair Display',sans-serif;
+
+}
+
+/* Show the dropdown menu when the parent list item is hovered */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+/* making it so as to get the text above the image here i used background blend mode */
+.product-heading{
+    color:#f36703;
+    font-family: 'Playfair Display',sans-serif;
+    font-style: oblique;
+    font-size:4em;
+    text-align: center;
+    background: url("../img/ppp.jpg"),rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-blend-mode:color-burn;
+    background-size: cover;
+    height: 40vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:0%;
+    margin: 0%;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+
+.product-card {
+    width: 20%; 
+    height:70%;
+    margin: 2%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 40vh;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-details {
+    padding: 10px;
+    background: linear-gradient(to bottom, #ff8c00, #ffaf5f);
+    color: #fff;
+    font-family: 'Merriweather', Times;
+}
+.price{
+    font-size:1.5em;
+    padding-bottom: 2%;   
+    font-family: 'Merriweather', Times; 
+}
+.product-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Merriweather', Times;
+}
+
+.product-details p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    font-family: 'Merriweather', Times;
+}
+
+.add-to-cart {
+    background-color: #ff4500; 
+    color: #fff;
+    font-family: 've', Times;
+    font-size: 1em;
+    letter-spacing: .04em;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background-color: #cc3700; /* Darker shade of orange on hover */
+}
+
+footer {
+    background-color:#cc5500;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section > p{
+    font-family: 'Merriweather', Times;
+    font-size: 1em;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 've',sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 1%;
+    margin: 0;
+    
+}
+body > footer > div > div:nth-child(1) > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Merriweather', Times;
+    font-size: 1em;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+form button {
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-family: 'Merriweather', Times;
+    font-size: 1em;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em;
+    
+}
+.social-icons li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.btnbtn{
+    border: solid 3px #a54603;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color:#cc5500;
+    background-color: #fca05f;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .25s linear;
+    font-family: 've',sans-serif;
+    font-size: 1em;
+  }
+  
+.btnbtn:hover{
+    background-color: #fff;
+    color: #cc5500;
+  }  
+  
